@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-5 m">
+            <div class="main pb-4">
+
+                <div style="display: flex; justify-content: space-around" class="mt-4">
+
+                    <h4 class="pl-2">ONLINE <br>
+                         CALCULATOR</h4>
+
+                    <div class="name mr-3">
+                      
+                    <p class="py-1" style="text-align: center;">Made By <br>
+                    KHANSA SIRAJ</p>
+                    </div>
+                </div>
+                
+               
+                
+                <div class="inputArea mb-5 mt-3 mx-3">
+                    <input type="text" class="mt-2" id="output">
+                </div>
+
+            
+
+                
+               <table class="mx-3">
+                   <tr>
+                    <td>
+                        <button type="button" class="btn ml-2 mb-2" onclick="clearScreen()" style="background-color: #5E2232 !important;">C</button>
+                    </td>
+                    <td>
+                        <button type="button" class="btn ml-2 mb-2" onclick="back()" style="background-color: #5E2232 !important;"><<</button>
+                    </td>
+    
+                    <td>
+                        <button type="button" class="btn ml-2  mb-2" style="background-color: #2E6FAA !important;" onclick="power()">x²</button>
+                    </td>
+                    <td> 
+                        <button type="button" class="btn ml-2  mb-2" style="background-color: #2E6FAA !important;" onclick="pi()">π</button>
+                    </td>
+                    <td>
+                         <button type="button" class="btn ml-1 mb-2" style="background-color: #2E6FAA !important;" onclick="getNumber('(')">(</button>
+                    </td>
+                   </tr>
+
+                   <tr>
+                    <td>
+                        <button type="button" class="btn ml-2 mb-2" onclick="getNumber('7')">7</button>
+                    </td>
+                    <td>
+                        <button type="button" class="btn ml-2 mb-2" onclick="getNumber('8')">8</button>
+                    </td>
+    
+                    <td>
+                        <button type="button" class="btn ml-2 mb-2" onclick="getNumber('9')">9</button>
+                    </td>
+                    <td> 
+                        <button type="button" class="btn ml-2  mb-2" style="background-color: #2E6FAA !important;" onclick="squareRoot()">√</button>
+                    </td>
+                    <td>
+                        <button type="button" class="btn ml-1  mb-2" style="background-color: #2E6FAA !important;" onclick="getNumber(')')">)</button>
+                    </td>
+                   </tr>
+
+                   <tr>
+                       <td>
+                        <button type="button" class="btn ml-2 mb-2" onclick="getNumber('4')">4</button>
+                       </td>
+                       <td>
+                        <button type="button" class="btn ml-2 mb-2" onclick="getNumber('5')">5</button>
+                       </td>
+                       <td>
+                        <button type="button" class="btn ml-2 mb-2" onclick="getNumber('6')">6</button>
+                       </td>
+                       <td>
+                        <button type="button" class="btn ml-2  mb-2" style="background-color: #2E6FAA !important;" onclick="getNumber('*')">x</button>
+                       </td>
+                       <td>
+                        <button type="button" class="btn ml-1 mb-2" style="background-color: #2E6FAA !important;" onclick="getNumber('/')">/</button>
+                       </td>
+                   </tr>
+
+                   <tr>
+                       <td>
+                        <button type="button" class="btn ml-2 mb-2" onclick="getNumber('3')">3</button>
+                       </td>
+                       <td>
+                        <button type="button" class="btn ml-2 mb-2" onclick="getNumber('2')">2</button>
+                       </td>
+                       <td>
+                        <button type="button" class="btn ml-2 mb-2" onclick="getNumber('1')">1</button>
+                       </td>
+                       <td>
+                        <button type="button" class="btn ml-2 mb-2" style="background-color: #2E6FAA !important;" onclick="getNumber('-')">-</button>
+                       </td>
+                       <td rowspan="2">
+                        <button type="button" class="btn ml-1  mb-2" onclick="result()" style="height: 120px !important; background-color: #5E2232  !important;">=</button>
+                       </td>
+                   </tr>
+
+                   <tr>
+                    <td>
+                        <button type="button" class="btn ml-2 mb-2" onclick="getNumber('0')" >0</button>
+                    </td>
+                    <td>
+                        <button type="button" class="btn ml-2 mb-2" onclick="getNumber('00')">00</button>
+                    </td>
+                    <td>
+                        <button type="button" class="btn ml-2 mb-2" onclick="getNumber('.')">.</button>
+                    </td>
+                    <td>
+                        <button type="button" class="btn ml-2  mb-2" style="background-color: #2E6FAA !important;" onclick="getNumber('+')">+</button> 
+
+                    </td>
+                   
+                </tr>
+               </table> 
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

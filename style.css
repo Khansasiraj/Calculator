@@ -1,0 +1,64 @@
+.m
+{
+    align-items: center;
+    text-align: center;
+}
+.main
+{
+    background-color: #C5C3C1;
+    border-radius: 10px;
+    width: 28em;
+}
+.name
+{
+    width: 11em;
+    background-color: #7B786A;
+    float: right;
+    border-radius: 6px;
+    height: 3.65em;
+    color: white;
+
+
+  
+}
+
+.inputArea
+{
+    width: 26em;
+    height: 6em;
+    background-color: #43484A;
+    border-radius: 6px;
+    
+}
+input
+{
+    width: 95%;
+    border: none;
+    border-radius: 6px;
+    font-size: 3.3em !important;
+    background-color: #7B786A;
+    padding: none;
+}
+
+
+.btn
+{
+    width: 4em !important;
+    height: 55px !important;
+    border-radius: 10px !important;
+    background-color: #232323 !important;
+    color: white !important;
+    font-size: 18px !important;
+
+}
+
+.fun
+{
+    width: 5em !important;
+    height: 50px !important;
+    border-radius: 10px !important;
+    background-color: #232323 !important;
+    color: white !important;
+    
+}
+

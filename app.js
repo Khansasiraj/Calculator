@@ -29,11 +29,6 @@ function power() {
 
 }
 
-function pi() {
-    var output = document.getElementById("output");
-    output.value = eval(Math.PI);
-
-}
 
 function back() {
     
